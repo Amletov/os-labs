@@ -1,0 +1,1 @@
+find . -maxdepth 1 -type f -user $1 -size +$2c -exec ls -l {} + | grep -E "(rw.)" | sort -k2,2
